@@ -1,0 +1,191 @@
+// Workspace file for LaTeX
+// Configured to use tau-latex-thesis-template of Tampere University.
+
+/*
+	Usage
+
+	Place this workspace file into the root folder of the LaTeX project.
+
+	Installing:
+		- Windows: Install MikTex and Ruby
+
+	First use:
+		- Run from VS Code "Build LaTeX project"
+		- MikTex should install all missing packages and build the project (takes a while)
+		- Check LaTeX workshop output and 'problems' menu if something seems wrong
+
+	Normal use:
+	 	- PDF is updated when .tex files are saved.
+		- PDF file is located in the root of the project
+		- Open PDF in VS Code when in main.tex file
+*/
+
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		// Grammarly (for English checking)
+		"grammarly.audience": "expert",
+		"grammarly.dialect": "british",
+		"grammarly.domain": "academic",
+		"grammarly.severity": {
+			"_default": 1,
+		},
+
+		// Spell right (for Finnish and English checking)
+		"spellright.language": ["fi", "en"],
+		"spellright.groupDictionaries": true,
+		"spellright.statusBarIndicator": false,
+		"spellright.notificationClass": "error",
+		"spellright.spellContext": "body",
+		"spellright.ignoreFiles": [
+			"**/.git/**",
+			"**/main.a*",
+			"**/main.b*",
+			"**/main.g*",
+			"**/main.i*",
+			"**/main.l*",
+			"**/main.o*",
+			"**/main.p*",
+			"**/main.r*",
+			"**/main.to*",
+			"**/pdfa*",
+			"**/mhchem*",
+			"**/sRGB*",
+			"**/tau-logo*",
+			"**/tauthesis*",
+
+			"**/spellright.dict",
+			"**/.gitignore",
+			"**/*.code-workspace"
+		],
+
+		// LaTeX Workshop
+		"latex-workshop.view.pdf.viewer": "tab",
+		"latex-workshop.latex.recipes": [
+			{
+				"name": "TAUBuild",
+				"tools": [
+					"taupdflatex",
+					"taumakeindex",
+					"taubiber",
+					"taupdflatex",
+					"taupdflatex"
+				]
+			}
+		],
+		"latex-workshop.latex.tools": [
+			{
+				"name": "taupdflatex",
+				"command": "pdflatex",
+				"args": [
+					"main.tex"
+				],
+				"env": {}
+			},
+			{
+				"name": "taumakeindex",
+				"command": "makeindex",
+				"args": [
+					"-s",
+					"main.ist",
+					"-t",
+					"main.glg",
+					"-o",
+					"main.gls",
+					"main.glo"
+				],
+				"env": {}
+			},
+			{
+				"name": "taubiber",
+				"command": "biber",
+				"args": [
+					"main"
+				],
+				"env": {}
+			}
+		],
+		"latex-workshop.latex.magic.args": [],
+		"latex-workshop.latex.magic.bib.args": [],
+
+		// Editor functionality
+		"editor.multiCursorModifier": "ctrlCmd",
+		"files.autoSave": "off",
+		"files.insertFinalNewline": true,
+		"files.trimTrailingWhitespace": true,
+		"files.trimFinalNewlines": true,
+
+		// Editor visuals
+		"editor.minimap.enabled": false,
+		"editor.cursorBlinking": "phase",
+		"editor.cursorSmoothCaretAnimation": true,
+		"editor.wordWrap": "on",
+		"editor.wrappingStrategy": "advanced",
+
+		"editor.accessibilitySupport": "off",
+
+		// Editor excluded files
+		"files.exclude": {
+			"**/.git/**": true,
+			"**/main.a*": true,
+			"**/main.b*": true,
+			"**/main.g*": true,
+			"**/main.i*": true,
+			"**/main.l*": true,
+			"**/main.o*": true,
+			"**/main.p*": true,
+			"**/main.r*": true,
+			"**/main.to*": true,
+			"**/pdfa*": true,
+			"**/mhchem*": true,
+			"**/sRGB*": true,
+			"**/tau-logo*": true,
+			"**/tauthesis*": true,
+		},
+
+		// Git
+		"git.autofetch": true,
+		"git.enableSmartCommit": true,
+		"git.alwaysShowStagedChangesResourceGroup": true,
+		"git.confirmSync": false,
+		"files.watcherExclude": {
+			"**/.git/**": true,
+			"**/main.a*": true,
+			"**/main.b*": true,
+			"**/main.g*": true,
+			"**/main.i*": true,
+			"**/main.l*": true,
+			"**/main.o*": true,
+			"**/main.p*": true,
+			"**/main.r*": true,
+			"**/main.to*": true,
+			"**/pdfa*": true,
+		},
+
+		// UI Visuals
+		"window.zoomLevel": 0,
+		"workbench.statusBar.visible": true,
+		"workbench.activityBar.visible": true,
+		"workbench.editor.focusRecentEditorAfterClose": false,
+
+		// Telemetry
+		"telemetry.enableCrashReporter": false,
+		"telemetry.enableTelemetry": false,
+		"workbench.settings.enableNaturalLanguageSearch": false,
+	},
+	"extensions": {
+		"recommendations": [
+		  // LaTex and writing
+		  "james-yu.latex-workshop",
+		  "znck.grammarly",
+		  "ban.spellright",
+		  // Theme
+		  "akamud.vscode-theme-onedark",
+		  "pkief.material-icon-theme"
+		]
+	}
+}
