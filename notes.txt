@@ -1,0 +1,8 @@
+Johdanto
+Lähtökohdat
+--Drinkkirobotti 5.0
+--vanha kaatoratkaisu ja sen ongelmat
+--tarkkuuden merkitys?
+Uusi kaatosysteemi
+Vertailu ja muunlaiset ratkaisut
+Yhteenveto
