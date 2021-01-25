@@ -1,8 +1,14 @@
-Johdanto
-Lähtökohdat
---Drinkkirobotti 5.0
---vanha kaatoratkaisu ja sen ongelmat
---tarkkuuden merkitys?
-Uusi kaatosysteemi
-Vertailu ja muunlaiset ratkaisut
-Yhteenveto
+1. Johdanto
+2. Lähtökohdat
+2.1 Drinkkirobotti 5.0
+-Kuvaillaan millainen sovellus drinkkirobotti on, mistä sen koodistackin eri osat ovat vastuussa, mistä solu koostuu yms.
+2.2 Vanha kaatoratkaisu ja sen ongelmat
+-Kerrotaan miten vanha ratkaisu sisälsi pelkän lineaarisen funktion kaadon ajalle.
+-Miksi juomamäärän tarkkuus on tärkeä.
+-Minkälaisia ongelmia vanha ratkaisu on aiheuttanut (esim. kaatonokan "tukkeutuminen" -> tyhjä lasi, väärä määrä juomaa pullossa jäljellä)
+3. Uusi kaatosysteemi
+-Tässä kappaleessa kerrotaan vaa'an avulla takaisinkytketystä systeemistä ja miten se on tehty.
+4. Vertailu ja muunlaiset ratkaisut
+-Vertaillaan vanhaa ja uutta ratkaisua
+-Kerrotaan muista hypoteettisista ratkaisuvaihtoehdoista, kuten robotin voima-anturien käyttö vaa'an sijaan.
+5. Yhteenveto
