@@ -2,7 +2,7 @@ Edellisessä kappaleessa kuvattu ratkaisu on toiminut kohtalaisen hyvin useamman
 
 Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä aina samanlaisia pulloja, ja sen lisäksi pulloissa kaatonokkia. Tämä helpottaa myös kaatoliikkeen ohjelmointia robotille, kun pullosta tuleva juoman virtaus osuu mukiin helpommin. Virtaus on myös tasaisempi kaatonokkaa käytettäessä. Kaatonokassa on pieni korvausilmaputki, joka tasaa painetta pullon sisä- ja ulkopuolella. Kaatoja pullosta ilman kaatonokkaa ovat simuloineet Geiger et al. Simulaatiosta huomataan, miten normaalisti pullon suusta kaadettaessa ilman pitää virrata kaatoaukosta välillä sisäänpäin. Tämä aiheuttaa nesteen virtaukseen nykivää liikettä, jota ei kaatonokkaa käytettäessä tule korvausilmaputken ansiosta.
 
-\begin{figure}
+\begin{figure}[h]
 \begin{center}
 \includegraphics{img/Geiger et al. juoman virtaus.jpg}
 \end{center}
@@ -11,11 +11,15 @@ Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä
 % -> \ref{fig:juomien_virtaus}
 \end{figure}
 
-Varsinkin kapeilla ulostuloputkilla ilmavirtaus juoman virtausta vastaan tekee juoman virtauksesta huomattavasti turbulenttisemman, mikä vaikuttaa juoman virtausnopeuteen. \cite{Geiger2012} Kapea ulostuloputki on parempi, sillä silloin robotin on paljon helpompi osua lasiin juomaa kaataessa.
+Varsinkin kapeilla ulostuloputkilla ilmavirtaus juoman virtausta vastaan tekee juoman virtauksesta huomattavasti turbulenttisemman, mikä vaikuttaa juoman virtausnopeuteen. \cite{Geiger2012} Kapea ulostuloputki on siltä kannalta parempi, että sellaista käytettäessä robotin on paljon helpompi osua lasiin juomaa kaataessa, kun virtaus on kooltaan kapeampi.
 
+\begin{figure}[h]
 \begin{center}
 \includegraphics{img/kaatonokka_nettikauppa.jpg}
+\caption{Kaatonokka, johon on merkitty ulostuloputki ja korvausilmaputki}
+\label{fig:kaatonokka}
 \end{center}
+\end{figure}
 
 Juoman kaatamisessa robotilla on kuitenkin omat ongelmansa, vaikka käytössä olisikin kaatonokka. Suurin ongelmista tässä sovelluskohteessa on se, että korvausilmaputkeen saattaa mennä pisara nestettä. Näin pullon sisään ei tule korvausilmaa, ja kaatonokasta ei virtaa nestettä liian suuren paine-eron takia, vaikka pullo olisi kokonaan ylösalaisin. Tällaista tilannetta ei robotti ole osannut havaita. Sen takia asiakkaan lasi on jäänyt käytännössä tyhjäksi ja juomatilaus on jouduttu tekemään uudelleen. Tavoite uudelle kaatoratkaisulle on tällaisen tilanteen tunnistaminen ja siitä palautuminen.
 

@@ -1,4 +1,6 @@
-Tässä kappaleessa käsitellään uutta kaatosysteemiä, jonka avulla pyritään ratkaisemaan edellisessä kappaleessa käsiteltyjä ongelmia. Se sisältää sekä logiikan että robottikoodin, sekä näiden kahden rajapinnan.
+Tässä kappaleessa käsitellään uutta kaatosysteemiä, jonka avulla pyritään ratkaisemaan edellisessä kappaleessa käsiteltyjä ongelmia. Kaatosysteemin käsittely sisältää sekä logiikan että robottikoodin ja näiden kahden rajapinnan.
+
+Uudessa kaatosysteemissä käytetään ikään kuin takaisinkytkentänä vaakaa, jolloin saadaan tietoon mukissa oleva massa kaadon aikana. Tässä vaakana on käytetty kappaleessa \ref{ch:drinkkirobotti_5.0} esiteltyä pullonvaihtopisteellä käytettyä vaakaa, mutta mikä tahansa samalla toimintaperiaatteella toimiva painoanturi kävisi tähän tarkoitukseen. Vaa'an NodeMCU:lta voidaan pyytää painoanturin osoittamaa massaa tietyllä merkkijonolla. Vaaka voidaan myös taarata toisella siihen tarkoitetulla merkkijonolla. Robotin logiikkaan on tehty oma ScaleCommunication-taso, joka ottaa yhteyden vaakaan. Sen metodeilla getWeight() ja Tare() pystyy suoraan käyttämään vaakaa logiikasta.
 
 % TODO Lisää tietoa LogicLayerin toiminnasta tähän tai kpl 2.1?
 
@@ -21,9 +23,9 @@ HandlePour kutsuu ensin RobotCellLayerin funktiota StartPour. RobotCellLayer vas
 \caption{NEWPOUR-robottijobi}
 \label{fig:NEWPOUR}
 \end{figure}
-\newpage
+%\newpage
 
-NEWPOUR-job on robotin liikkeiltään hyvin samantapainen kuin kappaleessa \ref{ch:vanha_kaato} esitetty POURDRINKS. Se robottia siirtymään kaatopisteelle ja kallistaa pulloa aloittaen kaadon. Uutta on kuitenkin se, että robotti jää while-loopin ansiosta odottamaan, että muuttuja I014 on 0. I014 on nimetty robotissa nimellä "pour ready signal".
+NEWPOUR-job on robotin liikkeiltään hyvin samantapainen kuin kappaleessa \ref{ch:vanha_kaato} esitetty POURDRINKS. Aluksi se määrittää kaadettavan mukin sijainnin CALCULATEPOUR-jobilla. Sitten robottia käsketään siirtymään kaatopisteelle ja robotti kallistaa pulloa aloittaen kaadon. Uutta on kuitenkin se, että robotti jää while-loopin ansiosta odottamaan, että muuttuja I014 on 0. I014 on nimetty robotissa nimellä "pour ready signal".
 
 HandlePour-funktio laskee halutun painon kertomalla halutun nesteen tilavuuden, joka on senttilitroina, kymmenellä, jolloin saadaan haluttu massa grammoina. Tästä vähennetään vielä vakio 27. Tämä vakio on määritetty testaamalla ja se kuvaa sitä viivettä, joka kestää siitä kun vaaka tunnistaa massan olevan sopiva, siihen kun nestettä ei enää tule ollenkaan mukiin.
 
