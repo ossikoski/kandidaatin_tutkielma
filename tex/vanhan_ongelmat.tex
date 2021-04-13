@@ -2,22 +2,21 @@ Edellisessä kappaleessa kuvattu ratkaisu on toiminut kohtalaisen hyvin useamman
 
 Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä aina samanlaisia pulloja, ja sen lisäksi pulloissa kaatonokkia. Tämä helpottaa myös kaatoliikkeen ohjelmointia robotille, kun pullosta tuleva juoman virtaus osuu mukiin helpommin. Virtaus on myös tasaisempi kaatonokkaa käytettäessä. Kaatonokassa on pieni korvausilmaputki, joka tasaa painetta pullon sisä- ja ulkopuolella. Kaatoja pullosta ilman kaatonokkaa ovat simuloineet Geiger et al. Simulaatiosta huomataan, miten normaalisti pullon suusta kaadettaessa ilman pitää virrata kaatoaukosta välillä sisäänpäin. Tämä aiheuttaa nesteen virtaukseen nykivää liikettä, jota ei kaatonokkaa käytettäessä tule korvausilmaputken ansiosta.
 
-\newpage
+%\newpage
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics{img/Geiger et al. juoman virtaus.jpg}
+\includegraphics[scale=1.1]{img/Geiger et al. juoman virtaus.jpg}
 \end{center}
-\caption{Juoman virtaus}
+\caption{Juoman virtaus \cite{Geiger2012}}
 \label{fig:juomien_virtaus}
-% -> \ref{fig:juomien_virtaus}
 \end{figure}
 
 Varsinkin kapeilla ulostuloputkilla ilmavirtaus juoman virtausta vastaan tekee juoman virtauksesta huomattavasti turbulenttisemman, mikä vaikuttaa juoman virtausnopeuteen. \cite{Geiger2012} Kapea ulostuloputki on siltä kannalta parempi, että sellaista käytettäessä robotin on paljon helpompi osua lasiin juomaa kaataessa, kun virtaus on kooltaan kapeampi.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics{img/kaatonokka_nettikauppa.jpg}
+\includegraphics[scale=0.08]{img/kaatonokka.jpg}
 \caption{Kaatonokka, johon on merkitty ulostuloputki ja korvausilmaputki}
 \label{fig:kaatonokka}
 \end{center}
@@ -29,7 +28,7 @@ Juomien kaatoon muuttujia tuo huomattavasti lisää myös se, millaista juomaa k
 
 Pullossa jäljellä oleva juoman määrä vaikuttaa kaadossa siihen, miten paljon juomaa virtaa pullosta. Kun pullo on täysin kaatoasennossa, juomaa virtaa vakiomäärä, mutta ero tulee kallistus- ja suoristusliikkeiden aikana. Kun pullo on täynnä, juomaa alkaa virtaamaan pullosta paljon pienemmällä kallistuskulmalla kuin siinä tapauksessa, jos pullossa on enää vähän juomaa jäljellä. Tämän vaikutusta kaatomäärään on pyritty pienentämään tekemällä kallistus- ja suoristusliikkeet nopeasti.
 
-Juomien kaatomäärän tarkkuus on tärkeää monestakin syystä. Varsinkin jos tarjoiltava juoma sisältää alkoholia, vaikuttaa asiaan Suomen lainsäädäntö ja alkoholilaki. Alkoholilaissa on kirjattu alkoholijuomien perusannokset: "Väkevien alkoholijuomien perusannos on 4 senttilitraa, enemmän kuin 15 tilavuusprosenttia etyylialkoholia sisältävän miedon alkoholijuoman perusannos on 8 senttilitraa, enemmän kuin 8 mutta enintään 15 tilavuusprosenttia sisältävän miedon alkoholijuoman perusannos on 12 senttilitraa ja muun miedon alkoholijuoman perusannos on 33 senttilitraa." \cite{Finlex} Lakisääteisyyden lisäksi on monta komponenttia sisältävissä juomasekoituksissa maun kannalta tärkeää, että komponentteja juomasekoituksessa oikea määrä. Usein asiakkaat ovat myös kiinnostuneet siitä, onko robotti kaatanut tasaisesti ja näin he vertailevat juomalaseja keskenään.
+Juomien kaatomäärän tarkkuus on tärkeää monestakin syystä. Varsinkin jos tarjoiltava juoma sisältää alkoholia, vaikuttaa asiaan Suomen lainsäädäntö ja alkoholilaki. Alkoholilaissa on kirjattu alkoholijuomien perusannokset: ``Väkevien alkoholijuomien perusannos on 4 senttilitraa, enemmän kuin 15 tilavuusprosenttia etyylialkoholia sisältävän miedon alkoholijuoman perusannos on 8 senttilitraa, enemmän kuin 8 mutta enintään 15 tilavuusprosenttia sisältävän miedon alkoholijuoman perusannos on 12 senttilitraa ja muun miedon alkoholijuoman perusannos on 33 senttilitraa.'' \cite{Finlex} Lakisääteisyyden lisäksi on monta komponenttia sisältävissä juomasekoituksissa maun kannalta tärkeää, että komponentteja juomasekoituksessa oikea määrä. Usein asiakkaat ovat myös kiinnostuneet siitä, onko robotti kaatanut tasaisesti ja näin he vertailevat juomalaseja keskenään.
 
 Asiakkaan näkökulman lisäksi ongelmat kaatojen määrässä kertautuvat, kun robotin back end saa väärää tietoa pulloista kaadetuista määristä. Jos robottia kutsutaan kaatamaan esimerkiksi kymmenen senttilitraa juomaa, ja juomaa kaatuukin senttilitra liikaa, niin back end laskee pullosta lähteneen silti kymmenen senttilitraa. Kun tämä tapahtuu tarpeeksi monta kertaa, niin back endin tieto pulloissa jäljellä olevista juomista ei pidä enää paikkaansa. Pahimmillaan back endissä voi olla tieto, että pullosta riittäisi juomaa vielä yhteen lasilliseen, mutta todellisuudessa kyseinen pullo on lähes tyhjä. Tällöin jää operaattorin vastuulle huomata, että juoma pullossa ei riitä. Näin voidaan taas joutua tilanteeseen, jossa asiakas tilaa juomaa, mutta saakin vain tyhjän lasin.
 
