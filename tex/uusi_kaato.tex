@@ -14,6 +14,9 @@ Logiikkakerros kutsuu logiikan funktiota PourBottle, joka käsittelee kaatoa yks
 \label{fig:HandlePour}
 \end{figure}
 
+\lstset{style=sharpc}
+\lstinputlisting[label={prog:HandlePour}, caption={HandlePour-funktio}]{code/handlePour.cs}
+
 HandlePour kutsuu ensin RobotCellLayerin funktiota StartPour. RobotCellLayer vastaa robotin kanssa kommunikoinnista. StartPour kutsuu robotin jobia, joka on tällä hetkellä nimellä NEWPOUR.
 
 \begin{figure}[h]

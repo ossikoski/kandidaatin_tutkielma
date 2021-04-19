@@ -14,8 +14,6 @@ Itse robottikoodi on suhteellisen yksinkertaista. Siinä käytetään Yaskawan I
 
 Uusimpana lisäyksenä robottisoluun on implementoitu vaaka, joka on niin sanotulla pullonvaihtopisteellä. Vaa'an toiminta on hyvä esimerkki robotti-bisneslogiikkarajapinnasta, sillä vaa'an voi kalibroida ja sen kullakin hetkellä näyttämää arvoa voi kysyä logiikan avulla. Tämän vaa'an avulla robotti tunnistaa, onko pullonvaihtopisteellä pulloa. Tätä käytetään esimerkiksi uuden pullon lisäämisessä: Kun robotti hakee uutta pulloa hyllyyn, niin se pysähtyy ensin pullonvaihtopisteen eteen. Jos vaaka kertoo, että pullonvaihtopiste on tyhjä, logiikka ei käske robottia hakemaan olematonta pulloa, vaan käskee sen odottamaan tietyn ajan. Robotti hakee pullon vasta, kun se lisätään pullonvaihtopisteelle. Tämän toiminnallisuuden avulla robotti ei siis vie olematonta pulloa hyllyyn, jolloin back endissä olisi tieto pullosta tietyllä kohdalla pullohyllyä, vaikka pulloa ei oikeasti ole. Samoin, jos robotti on poistamassa pulloa pullohyllystä, ei se vie sitä pullonvaihtopisteelle jos siellä on jo pullo. Näin robotti ei työnnä vanhaa pulloa vaihtopisteeltä alas, vaan odottaa että se poistetaan sieltä. Työn alla on myös ominaisuus, jossa logiikka kertoo back endille, miten paljon juomaa lisätyssä pullossa on, ja operaattorin tehtäväksi jää vain tarkistaa lukema, eikä itse arvioida lisättävässä pullossa olevaa juoman määrää.
 
-\newpage
-
 \begin{figure}[h]
 \begin{center}
 \includegraphics{img/rakenne_lowres.png}

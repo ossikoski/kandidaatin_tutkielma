@@ -8,10 +8,20 @@ Tässä kappaleessa käsitellään useamman vuoden käytössä ollutta ratkaisua
 \label{fig:pourdrinks}
 \end{figure}
 
+\begin{verbatim}
+IFTHENEXP I003>3
+   SET I011 I003
+   MUL I011 60
+   SUB I011 171
+ELSE
+\end{verbatim}
+
 Kaadon tarkkuutta tarkastellessa merkittävä osa jobissa on ensimmäinen if-else-haara, joka käsittelee kaadossa käytetylle ajastimelle annetun arvon laskentaa.
 
 Haluttu kaadon määrä senttilitroina on asetettu muuttujaan I003. POURDRINKS jobi laskee alussa ajan, jonka mukaan robotti kaataa juomaa. Kuten kuvasta nähdään, kaadon aika sekunteina saadaan kaavalla
-\[t = 60 \cdot V - 171, \]
+\begin{align}
+   t = 60 \cdot V - 171 \mathrm{,}
+\end{align}
 jossa V on muuttuja I003, eli haluttu tilavuus senttilitroina. Kyseessä on lineaarinen yhtälö, jossa kulmakerroin 60 ja vakiotermi -171 ovat määritetty kokeellisesti kaatamalla eri määriä juomia.
 
 Jobi toimii siis pääpiirteittäin siten, että robotti liikkuu kohteena olevan mukin kohdalle ja kallistaa pulloa. Kun pullo on kallistunut kaatoasentoon, käynnistyy ajastin, jonka kesto on määritelty muuttujaan I011.

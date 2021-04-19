@@ -51,7 +51,7 @@
 %programs - if you wish to display code snippets
 % Example: \documentclass[english, authoryear]{tauthesis}
 %          thesis in English with author-year citations
-\documentclass[finnish, numeric]{tauthesis}  % draft -> kuvat ei lataudu
+\documentclass[finnish, numeric, draft]{tauthesis}  % draft -> kuvat ei lataudu
 
 % The glossaries package throws a warning:
 % No language module detected for 'Finnish'.
@@ -69,6 +69,21 @@
 % Add [disable]{todonotes} to remove todonotes and remove the setlength'
 
 \usepackage{hyphenat}
+
+\usepackage[final]{listings}
+\usepackage{inconsolata}
+\lstdefinestyle{sharpc}{
+  language=[Sharp]C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  numbers=left,
+  stepnumber=2,
+  numberstyle=\tiny,
+  xleftmargin=0.6cm,
+  xrightmargin=3.4pt,
+  captionpos=b
+}
+\renewcommand{\lstlistingname}{Ohjelma}
 
 % Graphs
 % \usepackage{pgfplots}
@@ -160,7 +175,7 @@
 % e.g. Examiners or Tarkastajat, and <name>s are
 % replaced by the examiner names, each on their
 % separate line.
-\examiner[Tarkastaja]{Tarkastaja}
+\examiner[Tarkastaja]{Lionel Hulttinen}
 
 % The finishing date of the thesis (YYYY-MM-DD).
 \finishdate{2021}{04}{13}

@@ -8,10 +8,10 @@ Alla olevassa sekvenssikaaviossa on havainnollistettu UML-kielellä uuden kaatos
 \label{fig:Sequence}
 \end{figure}
 
-\newpage
-
 Logiikka laskee halutun juoman massan kaavalla
-\[pourWeight = pourAmount \cdot 10  - 27, \]
+\begin{align}
+    \mathrm{pourWeight} = \mathrm{pourAmount} \cdot 10 - 27 \mathrm{,}
+\end{align}
 eli halutusta massasta vähennetään vaa'an hitautta kuvaava vakio 27. Hitaus johtuu muun muassa tietoliikenneyhteyden hitaudesta ja looppien sisällä olevista odotusajoista. Esimerkiksi robotin jobissa olevaa timeria tai logiikassa olevaa sleepiä nostamalla tuo vakio 27 kasvaisi. Tämä hitaus tarkoittaa sitä, että pullon suoristusliikkeen aikana tapahtuviin muuttujiin ei pystytä enää vaa'an avulla vaikuttamaan. Tämä on kuitenkin vain pieni osa koko kaatoliikettä.
 
 Painoanturin tarkkuutta testattiin vertailemalla vaa'an antamia tuloksia tavallisen keittiövaa'an näyttämän painon kanssa. Kaikissa tapauksissa painoanturin ja keittiövaa'an tulos erosi maksimissaan yhdellä grammalla toisistaan. Vaa'an osoittamiin lukemiin saattaa tulla pieni impulssin aiheuttama piikki kaadon alussa, kun juomavirta ensimmäisenä osuu lasiin.
@@ -25,7 +25,5 @@ HandlePour-funktio taaraa vaa'an ennen jokaista kaatoa. Tämän ansiosta useamma
 \caption{Robotti kaatoasennossa kaatamassa vaa'an päällä olevaan mukiin}
 \label{fig:kaato}
 \end{figure}
-
-\newpage
 
 Uusi kaatosysteemi ei tällaisenaan mahdollista alle kolmen senttilitran kaatoja robotilla. Tämä johtuu siitä, että pelkkä kallistus- ja suoristusliikkeen aikana pullosta virtaava juoma on tilavuudeltaan noin kolme senttilitraa, vaikka robotti ei pysyisi kaatoasennossa paikallaan. Pienempiä kaatoja olisi luultavasti mahdollista saada muokkaamalla kaatoasennon kulmaa pienemmäksi. Kappaleessa \ref{ch:vanhan_ongelmat} luetellut lakisääteiset alkoholijuomien perusannokset eivät kuitenkaan vaadi alle neljän senttilitran kaatoja. Tämän takia pienten kaatojen mahdollisuutta ei lopulta ole tässäkään työssä toteutettu.
