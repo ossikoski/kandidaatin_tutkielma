@@ -1,0 +1,116 @@
+%% Creator: Inkscape 1.0.2-2 (e86c870879, 2021-01-15), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'sequence.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{465.75bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.95088567)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{sequence.pdf}}%
+    \put(0.11272142,0.35668277){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}opt\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{sequence.pdf}}%
+    \put(0.04830918,0.55152979){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}loop\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{sequence.pdf}}%
+    \put(0.11272142,0.91062802){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}:Logic Layer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{sequence.pdf}}%
+    \put(0.62801932,0.91062802){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}:Vaaka\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{sequence.pdf}}%
+    \put(0.5062963,0.63687601){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}tareComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{sequence.pdf}}%
+    \put(0.24201287,0.83011272){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}startPour()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{sequence.pdf}}%
+    \put(0.88566828,0.91062802){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}:Robotti\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{sequence.pdf}}%
+    \put(0.24769727,0.70128824){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tare()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{sequence.pdf}}%
+    \put(0.49492755,0.45974235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}currentWeight\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{sequence.pdf}}%
+    \put(0.2442512,0.15378422){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}stopPour()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{sequence.pdf}}%
+    \put(0.25811593,0.74959742){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}jobSendingSuccessful\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{sequence.pdf}}%
+    \put(0.76016103,0.0410628){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}jobComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{sequence.pdf}}%
+    \put(0.37037037,0.92190016){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}:Communication\end{tabular}}}}%
+    \put(0.37037037,0.89935588){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Layer\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{sequence.pdf}}%
+    \put(0.24959742,0.52415459){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}getWeight()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{sequence.pdf}}%
+    \put(0.50127216,0.68518519){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Tare()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{sequence.pdf}}%
+    \put(0.24864735,0.62077295){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}tareComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{sequence.pdf}}%
+    \put(0.7573108,0.81400966){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}NEWPOUR\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{sequence.pdf}}%
+    \put(0.49209339,0.50805153){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}getWeight()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{sequence.pdf}}%
+    \put(0.24864735,0.44363929){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}currentWeight\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{sequence.pdf}}%
+    \put(0.7478422,0.13768116){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I014 = 1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{sequence.pdf}}%
+    \put(0.24864735,0.07326892){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}writingComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{sequence.pdf}}%
+    \put(0.7563768,0.76570048){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}jobStarted\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{sequence.pdf}}%
+    \put(0.74879227,0.08937198){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}writingComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{sequence.pdf}}%
+    \put(0.24420289,0.33091787){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}shakeBottle()\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{sequence.pdf}}%
+    \put(0.7478422,0.32286634){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}I014 = 2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{sequence.pdf}}%
+    \put(0.74120774,0.26650564){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}writingComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{sequence.pdf}}%
+    \put(0.24864735,0.25040258){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}writingComplete\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{sequence.pdf}}%
+    \put(0.37037037,0.3647343){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}[currentWeight < 10 \&\& 2 < timePassed < 2.1]\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{sequence.pdf}}%
+    \put(0.37037037,0.55797101){\color[rgb]{0,0,0}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}[currentWeight < pourWeight \&\& timePassed < maxTime]\end{tabular}}}}%
+  \end{picture}%
+\endgroup%
