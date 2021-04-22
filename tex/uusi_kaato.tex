@@ -6,6 +6,8 @@ Uudessa kaatosysteemissä käytetään ikään kuin takaisinkytkentänä vaakaa,
 
 Kun käyttöliittymästä tilataan juomaa, logiikka käsittelee tilauksen, käskyttää robottia hakemaan oikean pullon kaatamaan oikeisiin mukeihin. Logiikkakerros kutsuu logiikan funktiota PourBottle, joka käsittelee kaatoa yksittäisestä pullosta. Nyt uutena logiikkaan on toteutettu funktio HandlePour, joka on kuvattu alla ohjelmassa \ref{prog:HandlePour}. Tämä funktio pyytää vaa'alta massalukemia ja käskee robottia lopettamaan kaadon, kun lukema on tarpeeksi suuri.
 
+\newpage
+
 \lstset{style=sharpc}
 \lstinputlisting[label={prog:HandlePour}, caption={HandlePour-funktio}]{code/handlePour.cs}
 
@@ -30,7 +32,7 @@ StopPour-funktion tehtävänä on ainoastaan muuttaa robotin muuttuja I014, eli 
 
 \begin{figure}[!h]
 \begin{center}
-\includegraphics[scale=0.8]{img/sequence.pdf}   %0.6 scale
+\includegraphics[scale=0.8]{img/sequence.pdf}   %0.8 scale
 \end{center}
 \caption{Sekvenssikaavio uudesta kaatosysteemistä}
 \label{fig:Sequence}
