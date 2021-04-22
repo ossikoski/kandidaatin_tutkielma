@@ -1,18 +1,25 @@
 Tässä kappaleessa käsitellään useamman vuoden käytössä ollutta ratkaisua juomien kaatamiseen Drinkkirobotilla. Ratkaisussa juomien kaadolle robottikoodissa on yksittäinen job, joka on esitetty alla.
 
-\begin{figure}[h]
-\begin{center}
-\includegraphics[scale=0.8]{img/POURDRINKS.png}
-\end{center}
-\caption{POURDRINKS-robottijobi}
-\label{fig:pourdrinks}
-\end{figure}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[scale=0.8]{img/POURDRINKS.png}
+%\end{center}
+%\caption{POURDRINKS-robottijobi}
+%\label{fig:pourdrinks}
+%\end{figure}
 
 %\input{code/POURDRINKS.tex}
 
-Kaadon tarkkuutta tarkastellessa merkittävä osa jobissa on ensimmäinen if-else-haara, joka käsittelee kaadossa käytetylle ajastimelle annetun arvon laskentaa.
+%\lstset{
+%   language={Yaskawa},
+%   basicstyle=\footnotesize\ttfamily,
+%   commentstyle=\itshape,
+%   captionpos=b
+%}
+\lstset{style=Yaskawatyyli}
+\lstinputlisting[label={prog:POURDRINKS}, caption={POURDRINKS-robottijobi}]{code/POURDRINKS.txt}
 
-Haluttu kaadon määrä senttilitroina on asetettu muuttujaan I003. POURDRINKS jobi laskee alussa ajan, jonka mukaan robotti kaataa juomaa. Kuten kuvasta nähdään, kaadon aika sekunteina saadaan kaavalla
+Kaadon tarkkuutta tarkastellessa merkittävä osa jobissa on ensimmäinen if-else-haara, joka alkaa ohjelman \ref{prog:POURDRINKS} riviltä 5. Se käsittelee kaadossa rivillä 24 käytetylle ajastimelle annetun arvon laskentaa. Haluttu kaadon määrä senttilitroina on asetettu muuttujaan I003. POURDRINKS jobi laskee alussa ajan, jonka mukaan robotti kaataa juomaa. Kuten kuvasta nähdään, kaadon aika sekunteina saadaan kaavalla
 \begin{align}
    t = 60 \cdot V - 171 \mathrm{,}
 \end{align}

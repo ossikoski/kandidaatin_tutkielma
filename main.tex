@@ -83,6 +83,32 @@
   xrightmargin=3.4pt,
   captionpos=b
 }
+
+\lstdefinelanguage{Yaskawa}
+{
+  morekeywords={
+    IFTHENEXP,
+    ELSE,
+    ENDIF,
+    NOP,
+    END,
+    WHILEEXP,
+    ENDWHILE
+  },
+  morecomment=[l][’]
+}
+
+\lstdefinestyle{Yaskawatyyli}{
+  language={Yaskawa},
+  basicstyle=\footnotesize\ttfamily,
+  commentstyle=\itshape,
+  numbers=left,
+  stepnumber=2,
+  numberstyle=\tiny,
+  xleftmargin=0.6cm,
+  captionpos=b
+}
+
 \renewcommand{\lstlistingname}{Ohjelma}
 
 \usepackage{graphicx}
