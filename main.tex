@@ -51,7 +51,7 @@
 %programs - if you wish to display code snippets
 % Example: \documentclass[english, authoryear]{tauthesis}
 %          thesis in English with author-year citations
-\documentclass[finnish, numeric, draft]{tauthesis}  % draft -> kuvat ei lataudu
+\documentclass[finnish, numeric]{tauthesis}  % draft -> kuvat ei lataudu
 
 % The glossaries package throws a warning:
 % No language module detected for 'Finnish'.
@@ -189,7 +189,7 @@
 % the primary and the secondary languages
 % of the thesis.
 \facultyname{Tekniikan ja luonnontieteiden tiedekunta}{Faculty of Engineering and Natural Sciences}
-\programmename{Teknisten tieteiden kandidaattiohjelma}{Bachelor's Programme in Engineering Sciences}
+\programmename{Teknisten tieteiden kandidaatin tutkinto-ohjelma}{Bachelor's Programme in Engineering Sciences}
 
 % The keywords to the thesis in the primary
 % and the secondary languages of the thesis.
@@ -261,14 +261,18 @@
 \label{ch:vanhan_ongelmat}
 \input{tex/vanhan_ongelmat.tex}
 
+\section{Mahdollisten ratkaisujen kartoitus}
+\label{ch:muut_ratkaisut}
+\input{tex/muut_ratkaisut.tex}
+
 \chapter{Ratkaisu}
 \label{ch:ratkaisu}
 
-\section{Uusi kaatosysteemi}
+\section{Uusi kaatoratkaisu}
 \label{ch:uusi_kaato}
 \input{tex/uusi_kaato.tex}
 
-\section{Uuden kaatosysteemin analysointi}
+\section{Uuden kaatoratkaisun analysointi}
 \label{ch:uuden_analysointi}
 \input{tex/uuden_analysointi.tex}
 
@@ -278,11 +282,6 @@
 \section{Vanhan ja uuden kaatoratkaisun vertailu}
 \label{ch:vanhan_ja_uuden_vertailu}
 \input{tex/vertailu.tex}
-
-\section{Muita mahdollisia ratkaisuja}
-\label{ch:muut_ratkaisut}
-\input{tex/muut_ratkaisut.tex}
-
 
 \chapter{Yhteenveto}
 \label{ch:yhteenveto}
