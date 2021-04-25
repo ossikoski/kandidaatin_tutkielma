@@ -1,6 +1,6 @@
-Edellisessä kappaleessa kuvattu ratkaisu on toiminut kohtalaisen hyvin useamman vuoden ottaen huomioon sen yksinkertaisuuden. Siinä on kuitenkin selkeitä heikkouksia. On selvää esimerkiksi, että alle kolmen senttilitran kaatoja tällä toteutuksella ei käytännössä voi tehdä. Tämä toteutus ei myöskään ota huomioon mitään muita muuttujia mitä juomien kaadossa voi olla halutun juomamäärän lisäksi. Tässä kappaleessa käydään läpi erilaisia ongelmia, joita vanhassa kaatoratkaisussa on ollut.
+Edellisessä alaluvussa kuvattu ratkaisu on toiminut kohtalaisen hyvin useamman vuoden ottaen huomioon sen yksinkertaisuuden. Siinä on kuitenkin selkeitä heikkouksia. On selvää esimerkiksi, että alle kolmen senttilitran kaatoja tällä toteutuksella ei käytännössä voi tehdä. Tämä toteutus ei myöskään ota huomioon mitään muita muuttujia mitä juomien kaadossa voi olla halutun juomamäärän lisäksi. Tässä alaluvussa käydään läpi erilaisia ongelmia, joita vanhassa kaatoratkaisussa on ollut.
 
-Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä aina samanlaisia pulloja, ja sen lisäksi pulloissa kaatonokkia. Tämä helpottaa myös kaatoliikkeen ohjelmointia robotille, kun pullosta tuleva juoman virtaus osuu mukiin helpommin. Virtaus on myös tasaisempi kaatonokkaa käytettäessä. Kaatonokassa on pieni korvausilmaputki, joka tasaa painetta pullon sisä- ja ulkopuolella. Kaatoja pullosta ilman kaatonokkaa ovat simuloineet Geiger et al. Simulaatiosta huomataan, miten normaalisti pullon suusta kaadettaessa ilman pitää virrata kaatoaukosta välillä sisäänpäin. Tämä aiheuttaa nesteen virtaukseen nykivää liikettä, jota ei kaatonokkaa käytettäessä tule korvausilmaputken ansiosta.
+Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä aina samanlaisia pulloja, ja sen lisäksi pulloissa kaatonokkia. Tämä helpottaa myös kaatoliikkeen ohjelmointia robotille, kun pullosta tuleva juoman virtaus osuu mukiin helpommin. Virtaus on myös tasaisempi kaatonokkaa käytettäessä. Kaatonokassa on pieni korvausilmaputki, joka tasaa painetta pullon sisä- ja ulkopuolella. Kaatoja pullosta ilman kaatonokkaa ovat simuloineet Geiger et al \cite{Geiger2012}. Simulaatiosta huomataan, miten normaalisti pullon suusta kaadettaessa ilman pitää virrata kaatoaukosta välillä sisäänpäin. Tämä aiheuttaa nesteen virtaukseen nykivää liikettä, jota ei kaatonokkaa käytettäessä tule korvausilmaputken ansiosta.
 
 \begin{figure}[h]
 \begin{center}
@@ -10,7 +10,7 @@ Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä
 \label{fig:juomien_virtaus}
 \end{figure}
 
-Varsinkin kapeilla ulostuloputkilla ilmavirtaus juoman virtausta vastaan tekee juoman virtauksesta huomattavasti turbulenttisemman, mikä vaikuttaa juoman virtausnopeuteen. \cite{Geiger2012} Kapea ulostuloputki on siltä kannalta parempi, että sellaista käytettäessä robotin on paljon helpompi osua lasiin juomaa kaataessa, kun virtaus on kooltaan kapeampi.
+Varsinkin kapeilla ulostuloputkilla ilmavirtaus juoman virtausta vastaan tekee juoman virtauksesta huomattavasti turbulenttisemman, mikä vaikuttaa juoman virtausnopeuteen \cite{Geiger2012}. Kapea ulostuloputki on siltä kannalta parempi, että sellaista käytettäessä robotin on paljon helpompi osua lasiin juomaa kaataessa, kun virtaus on kooltaan kapeampi.
 
 \begin{figure}[h]
 \begin{center}
