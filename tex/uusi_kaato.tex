@@ -14,7 +14,7 @@ HandlePour kutsuu ensin RobotCellLayerin funktiota StartPour. RobotCellLayer vas
 \lstset{style=Yaskawatyyli}
 \lstinputlisting[label={prog:NEWPOUR}, caption={NEWPOUR-tehtäväohjelma}]{code/NEWPOUR.txt}
 
-Ohjelman \ref{prog:NEWPOUR} NEWPOUR-tehtäväohjelma on robotin liikkeitä ohjaavilta komennoiltaan hyvin samantapainen kuin alaluvussa \ref{ch:vanha_kaato} esitellyssä ohjelmassa \ref{prog:POURDRINKS} esitetty POURDRINKS. Aluksi se määrittää kaadon kohteena olevan mukin sijainnin CALCULATEPOUR\hyp{}tehtäväohjelmalla. Sitten robottia käsketään siirtymään kaatopisteelle ja robotti kallistaa pulloa aloittaen kaadon. Uutta on kuitenkin se, että robotti jää while-silmukan ansiosta odottamaan, että muuttuja I014 on 0. I014 on nimetty robotissa nimellä ``pour ready signal''.
+Ohjelman \ref{prog:NEWPOUR} NEWPOUR\hyp{}tehtäväohjelma on robotin liikkeitä ohjaavilta komennoiltaan hyvin samantapainen kuin alaluvussa \ref{ch:vanha_kaato} esitellyssä ohjelmassa \ref{prog:POURDRINKS} POURDRINKS. Aluksi se määrittää kaadon kohteena olevan mukin sijainnin CALCULATEPOUR\hyp{}tehtäväohjelmalla. Sitten robottia käsketään siirtymään kaatopisteelle ja robotti kallistaa pulloa aloittaen kaadon. Uutta on kuitenkin se, että robotti jää while\hyp{}silmukan ansiosta odottamaan, että muuttuja I014 on 0. I014 on nimetty robotissa nimellä ``pour ready signal''.
 
 HandlePour\hyp{}funktio laskee halutun massan kertomalla halutun nesteen tilavuuden, joka on senttilitroina, kymmenellä, jolloin saadaan haluttu massa grammoina. Tästä vähennetään vielä vakio 27. Tämä vakio on määritetty testaamalla ja se kuvaa sitä viivettä, joka kestää siitä kun vaaka tunnistaa massan olevan sopiva, siihen kun nestettä ei enää tule ollenkaan mukiin.
 
