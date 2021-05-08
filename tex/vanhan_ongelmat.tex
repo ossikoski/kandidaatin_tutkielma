@@ -12,6 +12,8 @@ Eri muuttujien vaikutusta juoman kaatoon on yritetty vähentää käyttämällä
 
 Varsinkin kapeilla ulostuloputkilla ilmavirtaus juoman virtausta vastaan tekee juoman virtauksesta huomattavasti turbulenttisemman, mikä vaikuttaa juoman virtausnopeuteen \cite{Geiger2012}. Kapea ulostuloputki on siltä kannalta parempi, että sellaista käytettäessä robotin on paljon helpompi osua lasiin juomaa kaataessa, kun virtaus on kooltaan kapeampi.
 
+\newpage
+
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.07]{img/kaatonokka.jpg}
@@ -30,4 +32,4 @@ Juomien kaatomäärän tarkkuus on tärkeää monestakin syystä. Varsinkin jos 
 
 Asiakkaan näkökulman lisäksi ongelmat kaatojen määrässä kertautuvat, kun robotin logiikka saa väärää tietoa pulloista kaadetuista määristä. Jos robottia kutsutaan kaatamaan esimerkiksi kymmenen senttilitraa juomaa, ja juomaa kaatuukin senttilitra liikaa, niin logiikka laskee pullosta lähteneen silti kymmenen senttilitraa. Kun tämä tapahtuu tarpeeksi monta kertaa, niin logiikan tieto pulloissa jäljellä olevista juomista ei pidä enää paikkaansa. Pahimmillaan logiikassa voi olla tieto, että pullosta riittäisi juomaa vielä yhteen lasilliseen, mutta todellisuudessa kyseinen pullo on lähes tyhjä. Tällöin jää operaattorin vastuulle huomata, että juoma pullossa ei riitä. Näin voidaan taas joutua tilanteeseen, jossa asiakas tilaa juomaa, mutta saakin vain lähes tyhjän lasin.
 
-Robotin logiikassa on ominaisuus, joka tarkistaa, onko pullossa liian vähän juomaa jäljellä ja se kutsuu suoraan pullon poistoa solusta. Jotta ei päädyttäisi tilanteeseen, missä lähes tyhjästä pullosta yritetään tarjoilla juomaa, on jouduttu määrittelemään palautettavan pullon jäljellä olevaksi juomamäärän rajaksi melko korkea määrä. Tällöin robotti poistaa solusta pulloja, jossa juomaa olisi vielä tarpeeksi, koska ei haluta että joudutaan tilanteeseen, joka haittaa asiakasta. Uudella kaatoratkaisulla tavoitellaan tilannetta, jossa logiikan tieto pulloissa jäljellä olevista juomamääristä on koko ajan melko tarkka. Tällöin robotti voisi myös toteuttaa kaadot siten, että se kaataa vanhan pullon tyhjäksi, hakee uuden pullon ja jatkaa kaatoa siitä.
+Robotin logiikassa on ominaisuus, joka tarkistaa, onko pullossa liian vähän juomaa jäljellä, ja se kutsuu suoraan pullon poistoa solusta. Jotta ei päädyttäisi tilanteeseen, missä lähes tyhjästä pullosta yritetään tarjoilla juomaa, on jouduttu määrittelemään palautettavan pullon jäljellä olevaksi juomamäärän rajaksi melko korkea määrä. Tällöin robotti poistaa solusta pulloja, jossa juomaa olisi vielä tarpeeksi, koska ei haluta että joudutaan tilanteeseen, joka haittaa asiakasta. Uudella kaatoratkaisulla tavoitellaan tilannetta, jossa logiikan tieto pulloissa jäljellä olevista juomamääristä on koko ajan melko tarkka. Tällöin robotti voisi myös toteuttaa kaadot siten, että se kaataa vanhan pullon tyhjäksi, hakee uuden pullon ja jatkaa kaatoa siitä.
